@@ -21,6 +21,5 @@ let package = Package(
             swiftSettings: [SwiftSetting.define("IS_SPM")]
         ),
         .testTarget(name: "MessageKitTests", dependencies: ["MessageKit"])
-    ],
-    swiftLanguageVersions: [.v3]
+    ]
 )

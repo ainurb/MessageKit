@@ -27,7 +27,7 @@ import PackageDescription
 
 let package = Package(
     name: "MessageKit",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v10)],
     products: [
         .library(name: "MessageKit", targets: ["MessageKit"]),
     ],

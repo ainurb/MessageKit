@@ -22,5 +22,5 @@ let package = Package(
         ),
         .testTarget(name: "MessageKitTests", dependencies: ["MessageKit"])
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v3]
 )

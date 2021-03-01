@@ -23,6 +23,7 @@
  */
 
 import class AVFoundation.AVAudioPlayer
+import UIKit
 
 /// A protocol used to represent the data for an audio message.
 public protocol AudioItem {

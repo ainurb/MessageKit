@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// A standard protocol representing a sender.
 /// Use this protocol to adhere a object as the sender of a MessageType

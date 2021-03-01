@@ -23,6 +23,7 @@
  */
 
 import class CoreLocation.CLLocation
+import UIKit
 
 /// A protocol used to represent the data for a location message.
 public protocol LocationItem {

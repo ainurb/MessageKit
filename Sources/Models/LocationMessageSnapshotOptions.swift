@@ -23,6 +23,7 @@
  */
 
 import MapKit
+import UIKit
 
 /// An object grouping the settings used by the `MKMapSnapshotter` through the `LocationMessageDisplayDelegate`.
 public struct LocationMessageSnapshotOptions {

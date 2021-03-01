@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// An object that groups the metadata of a messages sender.
 @available(*, deprecated, message: "`Sender` has been replaced with the `SenderType` protocol in 3.0.0")

@@ -24,6 +24,7 @@
 
 import Foundation
 import MapKit
+import UIKit
 
 /// A protocol used by the `MessagesViewController` to customize the appearance of a `MessageContentCell`.
 public protocol MessagesDisplayDelegate: AnyObject {

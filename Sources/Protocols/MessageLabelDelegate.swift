@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// A protocol used to handle tap events on detected text.
 public protocol MessageLabelDelegate: AnyObject {

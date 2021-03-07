@@ -26,20 +26,16 @@ import Foundation
 import UIKit
 
 internal extension Bundle {
-
+    #if IS_SPM
     static var messageKitAssetBundle: Bundle = Bundle.module
-//    static func messageKitAssetBundle() -> Bundle {
-//        let podBundle = Bundle(for: MessagesViewController.self)
-//
-//        guard let resourceBundleUrl = podBundle.url(forResource: "MessageKitAssets", withExtension: "bundle") else {
-//            fatalError(MessageKitError.couldNotCreateAssetsPath)
-//        }
-//
-//        guard let resourceBundle = Bundle(url: resourceBundleUrl) else {
-//            fatalError(MessageKitError.couldNotLoadAssetsBundle)
-//        }
-//
-//        return resourceBundle
-//    }
-
+    #else
+    static var messageKitAssetBundle: Bundle {
+        guard let url = Bundle(for: MessagesViewController.self).url(forResource: "MessageKit", withExtension: "bundle"),
+              let resourcesBundle = Bundle(url: url)
+        else {
+            fatalError(MessageKitError.couldNotLoadAssetsBundle)
+        }
+        return resourcesBundle
+    }
+    #endif
 }
